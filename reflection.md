@@ -22,11 +22,15 @@ Document at least 3 bugs you found. Add rows as needed.
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+- I used Chatgpt as an assistant for this project. AI was very helpgul in learning how to use AI and Github (as I don't have much experience with these tools)
+- One of the bugs I observed while looking at the game was that it was giving wrong hints. It kept on saying "go higher" even though the answer was low. 
+- When I ashowed the code to AI, AI pointed out that the bug was due to the code saying when guess > score, the player should "GO HIGHER" but the code should "GO LOWER." I rade the chaange that was suggested by AI and then went back to the site to check the result. When I saw that the hints were now correct, I knew that AI had made the correct suggestion. 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result)
 
----
+--- THE AI suggested moving check_guess() to logic_utlis.py
+It created confusion for me because at first I didn't know whether to keep the old function or delete it from app.py 
+I verified the result by running the test and Streamlit again to make sure the game was still working. 
 
 ## 3. Debugging and testing your fixes
 
@@ -35,7 +39,11 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
----
+- I knew that the bug (the one that was giving wrong hints) was fixed when I ran the new code and went back to the game to see if it was working properly. When the game started giving correct hints when number was too high, I knew the bug was fixed. 
+
+- I ran pytest and all three tests passed. i also ran the Streamlit app and tested the game manually and the game was running better and wiith proper hints this time. This showe me that the updated code was working properly. 
+
+- Yes AI helped me create the pytest case for check_guess() and explained what the tests were checking. This helpeme me understand how to verigy that the bug was fixed. 
 
 ## 4. What did you learn about Streamlit and state?
 
