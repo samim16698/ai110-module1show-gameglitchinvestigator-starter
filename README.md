@@ -25,19 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
+- [ ] Describe the game's purpose
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
+
+- The game's purpose is to guide the user with accurate hints so that user can guess the correct answer.
+- The main bug I found was that the hint was wrong. Even if the guess was higher than the answer, game kept on saying to go higher. 
+- The fix that was applies was a refactored code. The refactored code fixed the wrong hints and therfore, when user goes to the app now, he/she receives proper hints and is more likely to win. 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a the number 56 (the secret is 60)
+2. Game says to go higher
+3. User now enters 62
+4. Game says to go lower
+6. User now enters 60
+7. Game says he/she is correct
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -47,6 +52,8 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
+
+Pasted: 3 passed in 0.21s
 ```
 
 ## 🚀 Stretch Features
